@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -f ./run.sh ]; then
+   ./run.sh
+fi
+
 echo "Pulling $GIT_SOURCE"
 git clone $GIT_SOURCE source
 mv ./source/* .
@@ -12,6 +16,3 @@ chmod +x run.sh
 
 echo "Initialising..."
 ./initialize.sh
-
-echo "Running..."
-./run.sh
