@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Pulling $GIT_SOURCE"
-git checkout $GIT_SOURCE /usr/src/app
+git clone $GIT_SOURCE .
 
 echo "Chmod +x ..."
 chmod +x initialize.sh
