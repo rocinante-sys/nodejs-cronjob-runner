@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [ -f ./run.sh ]; then
+    echo "Running..."
    ./run.sh
    exit 0
 fi
@@ -17,3 +18,6 @@ chmod +x run.sh
 
 echo "Initialising..."
 ./initialize.sh
+
+echo "Running..."
+./run.sh
