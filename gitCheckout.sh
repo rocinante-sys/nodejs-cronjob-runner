@@ -1,5 +1,10 @@
 #!/bin/bash
 
-git --work-tree=/usr/src/app checkout $GIT_SOURCE
+echo "Pulling $GIT_SOURCE"
+git checkout $GIT_SOURCE /usr/src/app
+
+echo "Initialising..."
 ./initialize.sh
+
+echo "Running..."
 ./run.sh
