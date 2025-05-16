@@ -2,6 +2,7 @@
 
 if [ -f ./run.sh ]; then
    ./run.sh
+   exit 0
 fi
 
 echo "Pulling $GIT_SOURCE"
