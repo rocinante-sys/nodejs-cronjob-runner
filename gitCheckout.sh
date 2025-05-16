@@ -1,7 +1,10 @@
 #!/bin/bash
 
 echo "Pulling $GIT_SOURCE"
-git clone $GIT_SOURCE .
+git clone $GIT_SOURCE source
+mv ./source/* .
+mv ./source/.* .
+rmdir source
 
 echo "Chmod +x ..."
 chmod +x initialize.sh
