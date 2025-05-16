@@ -4,4 +4,4 @@ WORKDIR /usr/src/app
 
 COPY gitCheckout.sh .
 
-CMD [ "gitCheckout.sh" ]
+CMD [ "./gitCheckout.sh" ]
